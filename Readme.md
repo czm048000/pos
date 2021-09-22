@@ -19,7 +19,7 @@
 ## 参考资料
 1，MIT JOS
 https://pdos.csail.mit.edu/6.828/2018/overview.html
-\\
+\n
 2，MIT xv6
 https://pdos.csail.mit.edu/6.828/2018/xv6.html
 
