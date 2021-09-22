@@ -16,6 +16,9 @@
 ### 10月22日～11月4日
 实现简单网络协议栈，支持线速(64B小包、千兆)收发IPv6数据包
 
+## 内核设计
+todo
+
 ## 参考资料
 1，MIT JOS
 https://pdos.csail.mit.edu/6.828/2018/overview.html
