@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "monitor.h": "c",
+        "assert.h": "c",
+        "console.h": "c"
+    }
+}

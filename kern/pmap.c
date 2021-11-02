@@ -96,13 +96,20 @@ boot_alloc(uint32_t n)
 		extern char end[];
 		nextfree = ROUNDUP((char *) end, PGSIZE);
 	}
-
 	// Allocate a chunk large enough to hold 'n' bytes, then update
 	// nextfree.  Make sure nextfree is kept aligned
 	// to a multiple of PGSIZE.
 	//
 	// LAB 2: Your code here.
 
+	nextfree = ROUNDUP(nextfree + n, PGSIZE); //要分配几个页
+	char* top = ROUNDUP(KERNTOP, PGSIZE);
+	cprintf("boot_alloc: %p / %p\n", nextfree, top);
+	if(nextfree > top){
+		panic("boot_alloc...free memory not enough");
+	}else{
+		return nextfree;
+	}
 	return NULL;
 }
 
